@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercy Mbaka | Backend Software Engineer — Python, Django, REST APIs, M-Pesa</title>
+  <title>Mercy Mbaka | Backend Software Engineer - Python, Django, REST APIs, M-Pesa</title>
   <meta name="description" content="Backend Software Engineer specializing in Python, Django, and PostgreSQL. I build secure, production-grade REST APIs, JWT authentication, M-Pesa payment integrations, and cloud-deployed SaaS systems for real businesses.">
   <meta name="keywords" content="Backend Software Engineer, Python Developer, Django Developer, REST API Architect, PostgreSQL, M-Pesa Daraja API, JWT Authentication, Docker, Cloud Deployment, Kenya Software Engineer, School Management System, SaaS Developer">
   <meta name="author" content="Mercy Mbaka">
@@ -11,7 +11,7 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mercy Mbaka | Backend Software Engineer — Python, Django, REST APIs">
+  <meta property="og:title" content="Mercy Mbaka | Backend Software Engineer - Python, Django, REST APIs">
   <meta property="og:description" content="Production-grade backend systems: REST APIs, JWT authentication, M-Pesa payment integrations, and cloud-deployed SaaS platforms.">
   <meta property="og:url" content="https://mbaka-cmd.github.io/MERCY-MBAKA-PORTIFOLIO/">
   <meta property="og:image" content="https://mbaka-cmd.github.io/MERCY-MBAKA-PORTIFOLIO/ginprofile.jpg">
@@ -1115,6 +1115,34 @@
       overflow: hidden;
     }
 
+    .design-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .design-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: white;
+    }
+
+    .design-fallback i {
+      font-size: 3rem;
+    }
+
+    .design-fallback span {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 0 0.75rem;
+    }
+
     .design-overlay {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -2090,15 +2118,15 @@
           </p>
 
           <p class="about-text">
-            My flagship project is the <strong>School Management SaaS System</strong>—a live production platform on Render serving 1,000+ student records across 4 role-based portals (Admin, Staff, Student, Parent).
+            My flagship project is the <strong>School Management SaaS System</strong> - a live production platform on Render serving 1,000+ student records across 4 role-based portals (Admin, Staff, Student, Parent).
           </p>
 
           <p class="about-text">
-            In plain terms: it replaces a school's entire paper-based back office—fee receipts, report cards, attendance registers, library records, and SMS reminders to parents—with one secure online system. A parent gets an M-Pesa payment prompt on their phone and pays a school fee in seconds; a teacher generates a full term's report cards in one click instead of days of manual grading.
+            In plain terms: it replaces a school's entire paper-based back office - fee receipts, report cards, attendance registers, library records, and SMS reminders to parents - with one secure online system. A parent gets an M-Pesa payment prompt on their phone and pays a school fee in seconds; a teacher generates a full term's report cards in one click instead of days of manual grading.
           </p>
 
           <p class="about-text">
-            Under the hood, it's built as a multi-tenant Django and PostgreSQL platform — one codebase, many schools, each one's data fully isolated. Every login runs through <strong>JWT-based authentication with role-based access control</strong>, so a parent only ever sees their own child's records and a teacher never touches admin-only financial data. Payments go through the <strong>M-Pesa Daraja API</strong> with webhook-driven reconciliation engineered to cut payment disputes — which it did, by 70% in production. Report cards generate as server-rendered PDFs (500+ a term), and Africa's Talking handles bulk SMS to parents. The whole platform is containerized with <strong>Docker</strong> and deployed on production infrastructure (Gunicorn, Nginx, Render) — the same class of setup larger engineering teams run, not a tutorial project.
+            Under the hood, it's built as a multi-tenant Django and PostgreSQL platform - one codebase, many schools, each one's data fully isolated. Every login runs through <strong>JWT-based authentication with role-based access control</strong>, so a parent only ever sees their own child's records and a teacher never touches admin-only financial data. Payments go through the <strong>M-Pesa Daraja API</strong> with webhook-driven reconciliation engineered to cut payment disputes - which it did, by 70% in production. Report cards generate as server-rendered PDFs (500+ a term), and Africa's Talking handles bulk SMS to parents. The whole platform is containerized with <strong>Docker</strong> and deployed on production infrastructure (Gunicorn, Nginx, Render) - the same class of setup larger engineering teams run, not a tutorial project.
           </p>
 
           <p class="about-text" style="font-size: 0.9rem; font-style: italic; color: var(--gray-light);">
@@ -2179,8 +2207,12 @@
       <div class="projects-grid">
         <!-- Project 1: School Management SaaS -->
         <div class="project-card animate-on-scroll">
-          <div class="project-image">
-            <i class="fas fa-school"></i>
+          <div class="project-image screenshot-frame">
+            <!-- Using an existing real screenshot since this system powers the Chuka Girls deployment too -->
+            <img src="./chuka g dashboard.jpg" alt="School Management SaaS Dashboard" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="screenshot-fallback">
+              <i class="fas fa-school"></i>
+            </div>
           </div>
           <div class="project-content">
             <span class="project-type">SaaS Platform - Live</span>
@@ -2203,9 +2235,6 @@
             <div class="project-links">
               <a href="https://school-management-system-final-1.onrender.com/" target="_blank" class="project-link">
                 <i class="fas fa-link"></i> Live System
-              </a>
-              <a href="https://github.com/Mbaka-cmd/SCHOOL-MANAGEMENT-SYSTEM-FINAL" target="_blank" class="project-link">
-                <i class="fab fa-github"></i> Code
               </a>
             </div>
           </div>
@@ -2327,7 +2356,7 @@
               <span class="skill-tag"><i class="fas fa-school"></i>School SaaS</span>
             </div>
 
-            <p class="project-tools-label">Screenshots — scroll to see more</p>
+            <p class="project-tools-label">Screenshots - scroll to see more</p>
             <div class="screenshot-gallery-scroll">
               <div class="screenshot-thumb screenshot-frame">
                 <img src="./chuka g admin dashboard.jpg" alt="Admin Dashboard" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -2383,11 +2412,16 @@
         </p>
       </div>
 
-      <div class="design-grid" style="grid-template-columns: 1fr; max-width: 380px; margin: 0 auto;">
+      <div class="design-grid" style="grid-template-columns: repeat(2, 1fr);">
         <!-- Promotional Materials -->
+        <!-- IMAGE SLOT: add a file named exactly "canva promotional materials.jpg" next to index.html -->
         <div class="design-card animate-on-scroll">
           <div class="design-image">
-            <i class="fas fa-bullhorn"></i>
+            <img src="./canva promotional materials.jpg" alt="Promotional Materials Design" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="design-fallback">
+              <i class="fas fa-bullhorn"></i>
+              <span>Add design image here</span>
+            </div>
             <div class="design-overlay">
               <a href="https://www.canva.com/projects" target="_blank" class="btn btn-gold">View Project</a>
             </div>
@@ -2397,6 +2431,81 @@
             <h3 class="design-title">Promotional Materials</h3>
             <p class="design-description">
               Eye-catching flyers, posters, and promotional graphics for events and product launches. Designed for both digital and print distribution.
+            </p>
+            <span class="canva-badge">
+              <i class="fas fa-palette"></i> Made with Canva
+            </span>
+          </div>
+        </div>
+
+        <!-- Business Posters -->
+        <!-- IMAGE SLOT: add a file named exactly "canva business poster.jpg" next to index.html -->
+        <div class="design-card animate-on-scroll">
+          <div class="design-image">
+            <img src="./canva business poster.jpg" alt="Business Poster Design" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="design-fallback">
+              <i class="fas fa-store"></i>
+              <span>Add design image here</span>
+            </div>
+            <div class="design-overlay">
+              <a href="https://www.canva.com/projects" target="_blank" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <span class="design-category">Marketing</span>
+            <h3 class="design-title">Business Posters</h3>
+            <p class="design-description">
+              Bold promotional posters for product launches, sales events, and brand campaigns - built for both print and digital use.
+            </p>
+            <span class="canva-badge">
+              <i class="fas fa-palette"></i> Made with Canva
+            </span>
+          </div>
+        </div>
+
+        <!-- Tours & Travel -->
+        <!-- IMAGE SLOT: add a file named exactly "canva tours.jpg" next to index.html -->
+        <div class="design-card animate-on-scroll">
+          <div class="design-image">
+            <img src="./canva tours.jpg" alt="Tours and Travel Design" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="design-fallback">
+              <i class="fas fa-plane-departure"></i>
+              <span>Add design image here</span>
+            </div>
+            <div class="design-overlay">
+              <a href="https://www.canva.com/projects" target="_blank" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <span class="design-category">Travel & Tourism</span>
+            <h3 class="design-title">Tour Package Designs</h3>
+            <p class="design-description">
+              Vibrant travel and tour package graphics - itineraries, destination highlights, and booking promotions.
+            </p>
+            <span class="canva-badge">
+              <i class="fas fa-palette"></i> Made with Canva
+            </span>
+          </div>
+        </div>
+
+        <!-- Photography Branding -->
+        <!-- IMAGE SLOT: add a file named exactly "canva photography.jpg" next to index.html -->
+        <div class="design-card animate-on-scroll">
+          <div class="design-image">
+            <img src="./canva photography.jpg" alt="Photography Branding Design" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="design-fallback">
+              <i class="fas fa-camera-retro"></i>
+              <span>Add design image here</span>
+            </div>
+            <div class="design-overlay">
+              <a href="https://www.canva.com/projects" target="_blank" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+          <div class="design-content">
+            <span class="design-category">Photography & Branding</span>
+            <h3 class="design-title">Photography Branding Kit</h3>
+            <p class="design-description">
+              Branding and promotional materials for photography businesses - price lists, portfolio showcases, and social templates.
             </p>
             <span class="canva-badge">
               <i class="fas fa-palette"></i> Made with Canva
@@ -2414,7 +2523,7 @@
         <span class="section-label">Production Services</span>
         <h2 class="section-title">Services & Pricing</h2>
         <p class="section-subtitle">
-          Transparent pricing across web, business systems, and hardware-integrated solutions. All figures are estimates — final quotes depend on project scope.
+          Transparent pricing across web, business systems, and hardware-integrated solutions. All figures are estimates - final quotes depend on project scope.
         </p>
       </div>
 
@@ -2616,7 +2725,7 @@
       <!-- Tab 4: Hardware + IoT -->
       <div class="service-panel" id="tab-hardware">
         <p style="text-align:center; color: var(--gray); margin-bottom: 2rem; max-width: 650px; margin-left:auto; margin-right:auto;">
-          Combining software, hardware, payments, and automation — solutions most developers can't deliver end-to-end.
+          Combining software, hardware, payments, and automation - solutions most developers can't deliver end-to-end.
         </p>
         <div class="service-grid">
           <div class="service-card">
@@ -2852,7 +2961,7 @@
             </div>
             <h3 class="blog-title">Why Every Backend Developer Should Understand Idempotency Before Building Payment Systems</h3>
             <p class="blog-excerpt">
-              The biggest lesson I learned integrating M-Pesa wasn't about APIs — it was a distributed systems concept called idempotency. Here's the story of how it changed the way I design every backend system.
+              The biggest lesson I learned integrating M-Pesa wasn't about APIs - it was a distributed systems concept called idempotency. Here's the story of how it changed the way I design every backend system.
             </p>
             <button type="button" class="read-more" data-article="idempotency">
               Read More <i class="fas fa-arrow-right"></i>
@@ -3369,7 +3478,7 @@
         title: "Why Every Backend Developer Should Understand Idempotency Before Building Payment Systems",
         meta: "June 2026 · 8 min read",
         bodyHTML: `
-          <blockquote>One of the biggest lessons I learned while integrating M-Pesa wasn't about APIs—it was about a distributed systems concept called idempotency. Once I understood it, it changed how I designed every backend system.</blockquote>
+          <blockquote>One of the biggest lessons I learned while integrating M-Pesa wasn't about APIs - it was about a distributed systems concept called idempotency. Once I understood it, it changed how I designed every backend system.</blockquote>
 
           <h2>The Theory</h2>
           <p>In distributed systems, a request can be delivered more than once.</p>
