@@ -2205,10 +2205,10 @@
       </div>
 
       <div class="projects-grid">
+
         <!-- Project 1: School Management SaaS -->
         <div class="project-card animate-on-scroll">
           <div class="project-image screenshot-frame">
-            <!-- Using an existing real screenshot since this system powers the Chuka Girls deployment too -->
             <img src="./chuka g dashboard.jpg" alt="School Management SaaS Dashboard" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="screenshot-fallback">
               <i class="fas fa-school"></i>
@@ -2240,50 +2240,80 @@
           </div>
         </div>
 
-        <!-- Project 2: Security Audit Platform -->
+        <!-- Project 2: Joan Kuku Farm -->
         <div class="project-card animate-on-scroll">
           <div class="project-image">
-            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-egg"></i>
           </div>
           <div class="project-content">
-            <span class="project-type">Full Stack Project</span>
-            <h3 class="project-title">Website Security Audit & Certificate Platform</h3>
+            <span class="project-type">Web App - Agritech · Live</span>
+            <h3 class="project-title">Joan Kuku Farm</h3>
             <p class="project-description">
-              Flask/PostgreSQL platform for issuing and managing digital security audit certificates.
+              A mobile-first web app for a poultry business - catalogue, cart, M-Pesa order flow, and WhatsApp handoff for 700+ customers.
             </p>
             <div class="project-meta">
-              <div class="meta-item"><strong>Problem:</strong> Manual certificate issuance and renewal tracking were slow and error-prone.</div>
-              <div class="meta-item"><strong>Result:</strong> Automated PDF certificate generation with full audit trails and webhook-triggered renewals.</div>
+              <div class="meta-item"><strong>Problem:</strong> Farm orders and payments were managed manually via WhatsApp, with no inventory tracking or structured ordering.</div>
+              <div class="meta-item"><strong>Result:</strong> Live public-facing site with a quantity-based cart that hands off itemised orders directly to WhatsApp.</div>
             </div>
             <p class="project-tools-label">Tools Used</p>
             <div class="project-tech">
-              <span class="skill-tag"><i class="fas fa-flask"></i>Flask</span>
-              <span class="skill-tag"><i class="fas fa-database"></i>PostgreSQL</span>
-              <span class="skill-tag"><i class="fas fa-key"></i>JWT</span>
-              <span class="skill-tag"><i class="fas fa-file-pdf"></i>WeasyPrint</span>
+              <span class="skill-tag"><i class="fab fa-python"></i>Django</span>
+              <span class="skill-tag"><i class="fas fa-credit-card"></i>M-Pesa API</span>
+              <span class="skill-tag"><i class="fas fa-shopping-cart"></i>Cart System</span>
+              <span class="skill-tag"><i class="fas fa-mobile-alt"></i>Mobile-First</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/Mbaka-cmd" target="_blank" class="project-link">
-                <i class="fab fa-github"></i> Details
+              <a href="https://mbaka-cmd.github.io/joan-kuku-farm/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> Live Site
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Project 3: KidLearn EdTech Platform -->
+        <!-- Project 3: Adalyn Technologies Rate Card & Sales System -->
+        <div class="project-card animate-on-scroll">
+          <div class="project-image">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-type">Business Tool · Live</span>
+            <h3 class="project-title">Adalyn Technologies Sales System</h3>
+            <p class="project-description">
+              A standalone sales toolkit - interactive rate card, invoice maker, quotation builder, and client records log - all downloadable as PDFs.
+            </p>
+            <div class="project-meta">
+              <div class="meta-item"><strong>Problem:</strong> Freelance developers lose deals without ready-to-send pricing, invoices, and quotations - especially during client calls.</div>
+              <div class="meta-item"><strong>Result:</strong> One HTML tool that closes the loop from rate inquiry to signed order and downloadable invoice, with WhatsApp handoff.</div>
+            </div>
+            <p class="project-tools-label">Tools Used</p>
+            <div class="project-tech">
+              <span class="skill-tag"><i class="fab fa-html5"></i>HTML/CSS/JS</span>
+              <span class="skill-tag"><i class="fas fa-file-pdf"></i>PDF Generator</span>
+              <span class="skill-tag"><i class="fab fa-whatsapp"></i>WhatsApp Flow</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mbaka-cmd.github.io/Adalyn-Technologies/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> Live Tool
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: KidLearn EdTech Platform (Ongoing) -->
         <div class="project-card animate-on-scroll">
           <div class="project-image">
             <i class="fas fa-chalkboard-teacher"></i>
           </div>
           <div class="project-content">
-            <span class="project-type">EdTech Platform</span>
+            <span class="project-type">EdTech Platform (Ongoing)</span>
             <h3 class="project-title">KidLearn EdTech Platform</h3>
             <p class="project-description">
-              A home-schooling platform for children, supporting guided learning at home.
+              A structured home-schooling platform for children, with lesson tabs, progress tracking, and curriculum-aligned content.
             </p>
             <div class="project-meta">
-              <div class="meta-item"><strong>Problem:</strong> Parents needed a guided, easy-to-use learning structure for home-schooling young children.</div>
-              <div class="meta-item"><strong>Result:</strong> Delivered a child-friendly interface with lesson tabs, progress tracking, and curriculum-aligned content.</div>
+              <div class="meta-item"><strong>Problem:</strong> Parents needed a guided, easy-to-use learning structure for home-schooling young children without a formal school.</div>
+              <div class="meta-item"><strong>Result:</strong> Child-friendly interface currently in active development - core lesson and progress modules complete.</div>
             </div>
             <p class="project-tools-label">Tools Used</p>
             <div class="project-tech">
@@ -2294,42 +2324,43 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/Mbaka-cmd" target="_blank" class="project-link">
-                <i class="fab fa-github"></i> Details
+                <i class="fab fa-github"></i> In Progress
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Project 4: Joan Kuku Farm -->
+        <!-- Project 5: Website Security Audit Platform -->
         <div class="project-card animate-on-scroll">
           <div class="project-image">
-            <i class="fas fa-egg"></i>
+            <i class="fas fa-shield-alt"></i>
           </div>
           <div class="project-content">
-            <span class="project-type">Web App - Agritech</span>
-            <h3 class="project-title">Joan Kuku Farm</h3>
+            <span class="project-type">Final Year Project</span>
+            <h3 class="project-title">Website Security Audit & Certificate Platform</h3>
             <p class="project-description">
-              A web app for managing poultry sales, inventory, and farm operations with M-Pesa integration.
+              Built as a final year project at Zetech University - a Flask/PostgreSQL platform for running website security audits and issuing digitally signed certificates.
             </p>
             <div class="project-meta">
-              <div class="meta-item"><strong>Problem:</strong> Farm orders, batch tracking, and payments were handled manually, slowing operations.</div>
-              <div class="meta-item"><strong>Result:</strong> Automated order, inventory, and M-Pesa payment workflows for a real poultry business.</div>
+              <div class="meta-item"><strong>What it did:</strong> Automated security audit workflows and generated PDF certificates with JWT-secured audit trails.</div>
+              <div class="meta-item"><strong>Stack:</strong> Flask, PostgreSQL, JWT authentication, WeasyPrint PDF generation.</div>
             </div>
             <p class="project-tools-label">Tools Used</p>
             <div class="project-tech">
-              <span class="skill-tag"><i class="fas fa-credit-card"></i>M-Pesa API</span>
-              <span class="skill-tag"><i class="fas fa-boxes"></i>Inventory</span>
-              <span class="skill-tag"><i class="fas fa-paint-brush"></i>UI/UX</span>
+              <span class="skill-tag"><i class="fas fa-flask"></i>Flask</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>PostgreSQL</span>
+              <span class="skill-tag"><i class="fas fa-key"></i>JWT</span>
+              <span class="skill-tag"><i class="fas fa-file-pdf"></i>WeasyPrint</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">
-                <i class="fas fa-briefcase"></i> Details
-              </a>
+              <span class="project-link" style="color: var(--gray-light); cursor: default;">
+                <i class="fas fa-archive"></i> Archived
+              </span>
             </div>
           </div>
         </div>
 
-        <!-- Project 5: Chuka Girls Secondary School -->
+        <!-- Project 6: Chuka Girls Secondary School -->
         <div class="project-card animate-on-scroll">
           <div class="project-image screenshot-frame">
             <img src="./chuka g dashboard.jpg" alt="Chuka Girls Secondary School System Dashboard" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -2397,6 +2428,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
