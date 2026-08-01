@@ -1378,11 +1378,4 @@ img.loaded {
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
-/* Space Grotesk override */
-:root {
-  --font-main: 'Space Grotesk', sans-serif;
-}
 
-body, h1, h2, h3, h4, h5, h6, p, a, button, span, div {
-  font-family: var(--font-main) !important;
-}
